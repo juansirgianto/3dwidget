@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { Viewer } from '@photo-sphere-viewer/core';
 import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+import type { MarkersPlugin as MarkersPluginType, Marker } from '@photo-sphere-viewer/markers-plugin';
 import '@photo-sphere-viewer/core/index.css';
 import '@photo-sphere-viewer/markers-plugin/index.css';
 
@@ -70,7 +71,7 @@ export default function Panorama() {
       plugins: [MarkersPlugin],
     });
 
-    const markers = viewer.getPlugin(MarkersPlugin) as any;
+    const markers = viewer.getPlugin(MarkersPlugin) as MarkersPluginType;
 
     // --- DEFINISI SCENE (ganti src sesuai aset kamu; bisa URL atau file di /public) ---
     type SceneId =
