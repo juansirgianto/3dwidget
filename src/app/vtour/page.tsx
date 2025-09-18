@@ -33,7 +33,7 @@ export default function Page() {
 
       {/* Logo kiri */}
       <div className="absolute top-5 left-5 z-50">
-        <a href="/"><img src="/3dwidget/logo.png" alt="Logo" className="w-[200px]" /></a>
+        <a href="/3dwidget"><img src="/3dwidget/logo.png" alt="Logo" className="w-[200px]" /></a>
       </div>
 
       {/* Nav kanan */}
