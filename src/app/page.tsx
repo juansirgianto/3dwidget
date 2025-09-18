@@ -1,4 +1,5 @@
 import { MoveRight } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 function Page() {
@@ -17,7 +18,7 @@ function Page() {
 
       {/* Konten di atas video */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center gap-6">
-        <img src="logo.png" alt="" className='w-[30vw]' />
+        <Image src="logo.png" alt="" className='w-[30vw]' />
         <h1 className="text-4xl font-semibold text-white drop-shadow-lg">
           Present | Inspire | Grow
         </h1>
