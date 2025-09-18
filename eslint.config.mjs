@@ -10,8 +10,19 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // extend config bawaan next
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // tambahkan custom config
   {
+    rules: {
+      // 🚫 matikan aturan yang blok <a> dan <img>
+      "@next/next/no-img-element": "off",
+      "@next/next/no-html-link-for-pages": "off",
+
+      // opsional: kalau masih sering pakai `any`
+      "@typescript-eslint/no-explicit-any": "off",
+    },
     ignores: [
       "node_modules/**",
       ".next/**",

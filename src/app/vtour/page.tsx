@@ -4,8 +4,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import Panorama from '../component/panorama';
 import { Mail, MapPin, Maximize, Phone, Volume2 } from 'lucide-react';
 import { Switch } from '@/components/ui/switch';
-import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Page() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -35,7 +33,7 @@ export default function Page() {
 
       {/* Logo kiri */}
       <div className="absolute top-5 left-5 z-50">
-        <Link href="/"><Image src="/logo.png" alt="Logo" className="w-[200px]" /></Link>
+        <a href="/"><img src="/logo.png" alt="Logo" className="w-[200px]" /></a>
       </div>
 
       {/* Nav kanan */}
