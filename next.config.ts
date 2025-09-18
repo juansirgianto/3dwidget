@@ -1,6 +1,6 @@
 // next.config.js
 const isProd = process.env.NODE_ENV === 'production';
-const repo = 'nama-repository-kamu'; // ganti!
+const repo = '3dwidget'; // ganti!
 
 module.exports = {
   output: 'export',                 // <-- penting: static export ke /out
