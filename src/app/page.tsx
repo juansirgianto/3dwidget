@@ -21,7 +21,7 @@ function Page() {
         <h1 className="text-4xl font-semibold text-white drop-shadow-lg">
           Present | Inspire | Grow
         </h1>
-        <a href="/vtour">
+        <a href="/3dwidget/vtour">
         <button className="text-black items-center gap-2 flex justify-center text-4xl bg-white/20 backdrop-blur-sm rounded-full py-3 px-5 w-fit hover:bg-white/30 cursor-pointer">
           <h1 className="text-white">Explore</h1>
           <MoveRight size={40} className="bg-white p-2 rounded-full text-black" />

@@ -89,65 +89,65 @@ export default function Panorama() {
 
     const scenes: Record<SceneId, SceneDef> = {
       entrance: {
-        panorama: '/vtour/ENTRANCE_.jpg',
+        panorama: '/3dwidget/vtour/ENTRANCE_.jpg',
         markers: [
-          { id: 'to-study',   to: 'studyroom',   img: '/vtour/study.jpg',   label: 'Study',        position: { yaw: deg(75),  pitch: deg(-10) } },
-          { id: 'to-kitchen', to: 'kitchen',     img: '/vtour/kitchen.jpg', label: 'Kitchen',      position: { yaw: deg(12),  pitch: deg(-6) } },
-          { id: 'to-bedroom', to: 'bedroom',     img: '/vtour/bedroom.jpg', label: 'Bedroom',      position: { yaw: deg(-6),  pitch: deg(23) } },
+          { id: 'to-study',   to: 'studyroom',   img: '/3dwidget/vtour/study.jpg',   label: 'Study',        position: { yaw: deg(75),  pitch: deg(-10) } },
+          { id: 'to-kitchen', to: 'kitchen',     img: '/3dwidget/vtour/kitchen.jpg', label: 'Kitchen',      position: { yaw: deg(12),  pitch: deg(-6) } },
+          { id: 'to-bedroom', to: 'bedroom',     img: '/3dwidget/vtour/bedroom.jpg', label: 'Bedroom',      position: { yaw: deg(-6),  pitch: deg(23) } },
         ],
       },
       studyroom: {
-        panorama: '/vtour/study.jpg',
+        panorama: '/3dwidget/vtour/study.jpg',
         markers: [
-          { id: 'back-entrance', to: 'entrance', img: '/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(-86), pitch: deg(-10) } },
+          { id: 'back-entrance', to: 'entrance', img: '/3dwidget/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(-86), pitch: deg(-10) } },
         ],
       },
       kitchen: {
-        panorama: '/vtour/kitchen.jpg',
+        panorama: '/3dwidget/vtour/kitchen.jpg',
         markers: [
-          { id: 'back-entrance',  to: 'entrance',     img: '/vtour/ENTRANCE_.jpg',     label: 'Entrance',     position: { yaw: deg(-200), pitch: deg(-8) } },
-          { id: 'to-kitchenpatio',to: 'kitchenpatio', img: '/vtour/kitchenpatio.jpg', label: 'Kitchen Patio', position: { yaw: deg(-17),  pitch: deg(-6) } },
-          { id: 'to-lounge',      to: 'lounge',       img: '/vtour/lounge.jpg',       label: 'Lounge',        position: { yaw: deg(-100), pitch: deg(-6) } },
+          { id: 'back-entrance',  to: 'entrance',     img: '/3dwidget/vtour/ENTRANCE_.jpg',     label: 'Entrance',     position: { yaw: deg(-200), pitch: deg(-8) } },
+          { id: 'to-kitchenpatio',to: 'kitchenpatio', img: '/3dwidget/vtour/kitchenpatio.jpg', label: 'Kitchen Patio', position: { yaw: deg(-17),  pitch: deg(-6) } },
+          { id: 'to-lounge',      to: 'lounge',       img: '/3dwidget/vtour/lounge.jpg',       label: 'Lounge',        position: { yaw: deg(-100), pitch: deg(-6) } },
         ],
       },
       kitchenpatio: {
-        panorama: '/vtour/kitchenpatio.jpg',
+        panorama: '/3dwidget/vtour/kitchenpatio.jpg',
         markers: [
-          { id: 'back-entrance', to: 'entrance', img: '/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(149), pitch: deg(-5) } },
-          { id: 'to-patio',      to: 'patio',    img: '/vtour/patio.jpg',    label: 'Patio',    position: { yaw: deg(12),  pitch: deg(-6) } },
-          { id: 'to-lounge',     to: 'lounge',   img: '/vtour/lounge.jpg',   label: 'Lounge',   position: { yaw: deg(183), pitch: deg(-6) } },
+          { id: 'back-entrance', to: 'entrance', img: '/3dwidget/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(149), pitch: deg(-5) } },
+          { id: 'to-patio',      to: 'patio',    img: '/3dwidget/vtour/patio.jpg',    label: 'Patio',    position: { yaw: deg(12),  pitch: deg(-6) } },
+          { id: 'to-lounge',     to: 'lounge',   img: '/3dwidget/vtour/lounge.jpg',   label: 'Lounge',   position: { yaw: deg(183), pitch: deg(-6) } },
         ],
       },
       patio: {
-        panorama: '/vtour/patio.jpg',
+        panorama: '/3dwidget/vtour/patio.jpg',
         markers: [
-          { id: 'to-kitchenpatio', to: 'kitchenpatio', img: '/vtour/kitchenpatio.jpg', label: 'Kitchen Patio', position: { yaw: deg(115), pitch: deg(-12) } },
+          { id: 'to-kitchenpatio', to: 'kitchenpatio', img: '/3dwidget/vtour/kitchenpatio.jpg', label: 'Kitchen Patio', position: { yaw: deg(115), pitch: deg(-12) } },
         ],
       },
       lounge: {
-        panorama: '/vtour/lounge.jpg',
+        panorama: '/3dwidget/vtour/lounge.jpg',
         markers: [
-          { id: 'to-kitchen', to: 'kitchen', img: '/vtour/kitchen.jpg', label: 'Kitchen', position: { yaw: deg(75), pitch: deg(-10) } },
+          { id: 'to-kitchen', to: 'kitchen', img: '/3dwidget/vtour/kitchen.jpg', label: 'Kitchen', position: { yaw: deg(75), pitch: deg(-10) } },
         ],
       },
       bedroom: {
-        panorama: '/vtour/bedroom.jpg',
+        panorama: '/3dwidget/vtour/bedroom.jpg',
         markers: [
-          { id: 'back-entrance', to: 'entrance', img: '/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(-189), pitch: deg(-17) } },
-          { id: 'to-balcony',    to: 'balcony',  img: '/vtour/balcony.jpg',  label: 'Balcony',  position: { yaw: deg(-12),  pitch: deg(-11) } },
-          { id: 'to-bathroom',   to: 'bathroom', img: '/vtour/bathroom.jpg', label: 'Bathroom', position: { yaw: deg(-132), pitch: deg(-11) } },
+          { id: 'back-entrance', to: 'entrance', img: '/3dwidget/vtour/ENTRANCE_.jpg', label: 'Entrance', position: { yaw: deg(-189), pitch: deg(-17) } },
+          { id: 'to-balcony',    to: 'balcony',  img: '/3dwidget/vtour/balcony.jpg',  label: 'Balcony',  position: { yaw: deg(-12),  pitch: deg(-11) } },
+          { id: 'to-bathroom',   to: 'bathroom', img: '/3dwidget/vtour/bathroom.jpg', label: 'Bathroom', position: { yaw: deg(-132), pitch: deg(-11) } },
         ],
       },
       balcony: {
-        panorama: '/vtour/balcony.jpg',
+        panorama: '/3dwidget/vtour/balcony.jpg',
         markers: [
-          { id: 'to-bedroom', to: 'bedroom', img: '/vtour/bedroom.jpg', label: 'Bedroom', position: { yaw: deg(-37), pitch: deg(-12) } },
+          { id: 'to-bedroom', to: 'bedroom', img: '/3dwidget/vtour/bedroom.jpg', label: 'Bedroom', position: { yaw: deg(-37), pitch: deg(-12) } },
         ],
       },
       bathroom: {
-        panorama: '/vtour/bathroom.jpg',
+        panorama: '/3dwidget/vtour/bathroom.jpg',
         markers: [
-          { id: 'to-bedroom', to: 'bedroom', img: '/vtour/bedroom.jpg', label: 'Bedroom', position: { yaw: deg(160), pitch: deg(-12) } },
+          { id: 'to-bedroom', to: 'bedroom', img: '/3dwidget/vtour/bedroom.jpg', label: 'Bedroom', position: { yaw: deg(160), pitch: deg(-12) } },
         ],
       },
     };
