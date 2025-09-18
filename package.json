@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next build && next export",
-    "deploy:local": "npm run export && cp out/index.html out/404.html"
+    "dev": "next dev --turbopack",
+    "build": "next build --no-lint",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@photo-sphere-viewer/core": "^5.14.0",
